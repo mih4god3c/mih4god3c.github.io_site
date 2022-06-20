@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>M1ha</title>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="static/nftlmao.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#divSocials" ).draggable();
+    $( "#music" ).draggable();
+    $( "#divSpotify" ).draggable();
+    $( "#camera" ).draggable();
+    $( "#x" ).draggable();
+
+
+  } );
+  </script>
+  </head>
+
+  <body>
+
+    
+
+    <!-- PRVI CONTAINER -->
+    <div class="window" id="draggable" style="position: fixed; margin: 32px; width: 900px; height: 300px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          miha godec.
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="window-body">
+        <p>whoami?</p>
+        <p>- Gymnasium graduate at I. gimnazija v Celju.</p>
+        <p>- Student at University of Ljubljana, Faculty of Computer science and informatics,</p>
+        <p>currently writting diploma on Gait recognition.</p>
+
+        <section class="field-row" style="justify-content: flex-end">
+          <button onclick="showDiv()">Contact</button>
+          <button><a href="/static/MihaPass.pdf" target="”_blank”">View CV</a></button>
+        </section>
+      </div>
+    </div>
+
+
+    <!-- SOCIALS CONTAINER -->
+    <div class="window socials" id="divSocials" style="margin: 32px; width: 350px; height: 250px; position: absolute; display: none;">  
+    <div class="title-bar">
+      <div class="title-bar-text">
+        contact.
+      </div>
+    </div>
+    <div class="window-body">
+      <p><a href="https://github.com/mih4god3c">@mih4godec</a> on Github.</p>
+      <p><a href="https://www.linkedin.com/in/miha-godec-62a058237/">Miha Godec</a> on Linkedin.</p>
+      <p><a href="https://discord.com/">MaGnezij#4770</a> on Discord.</p>
+
+      <section class="field-row" style="justify-content: flex-end">            
+          <button onclick="showDiv()">OK</button>
+      </section>
+    </div>
+  </div>
+  </body>
+
+  <img src="static/music.png" id="music" ondblclick="showDivSpotify()"></button>
+  <img src="static/Camera.png" id="camera" ondblclick="showDivInstagram()"></button>
+  <img src="static/x.png" id="x" ondblclick="goCrazy()"></button>
+
+    <!-- Spotify CONTAINER -->
+    <div class="window socials" id="divSpotify" style="margin: 32px; width: 350px; height: 150px; position: absolute; display: none;">  
+      <div class="title-bar">
+        <div class="title-bar-text">
+          music.
+        </div>
+      </div>
+      <div class="window-body">
+        <p><a href="https://open.spotify.com/user/mih4god3c">@mih4godec</a> on Spotify.</p>
+        <section class="field-row" style="justify-content: flex-end">            
+            <button onclick="showDivSpotify()">OK</button>
+        </section>
+      </div>
+    </div>
+
+      <!-- Ig CONTAINER -->
+      <div class="window socials" id="ig" style="margin: 32px; width: 350px; height: 150px; position: absolute; display: none;">  
+        <div class="title-bar">
+          <div class="title-bar-text">
+            photos.
+          </div>
+        </div>
+        <div class="window-body">
+          <p><a href="https://www.instagram.com/godec.m/">@godec.m</a> on Instagram.</p>
+          <section class="field-row" style="justify-content: flex-end">            
+              <button onclick="showDivInstagram()">OK</button>
+          </section>
+        </div>
+      </div>
+
+    
+
+      <footer>
+        <button id="start" onclick="changeBg()"></button>
+      </footer>
+
+    </body>
+  
+</html>
+
+
